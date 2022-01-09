@@ -15,7 +15,7 @@ function App() {
     <Navigation />
     <ToggleSwitch/>
     <Routes>
-      <Route exact path="/home" element={<HomePage />}/>
+      <Route exact path="/" element={<HomePage />}/>
       <Route exact path="/about" element={<AboutPage />}/>
       <Route exact path="/education" element={<EducationPage />}/>
       <Route exact path="/work" element={<WorkPage />}/>
