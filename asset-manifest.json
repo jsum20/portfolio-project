@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/EdProject/static/css/main.401a7fc4.css",
-    "main.js": "/EdProject/static/js/main.030e89f9.js",
+    "main.js": "/EdProject/static/js/main.e5f0cf10.js",
     "static/media/architecture-2.jpeg": "/EdProject/static/media/architecture-2.9fafddbcd96324d648a7.jpeg",
     "static/media/digital-art-2.jpeg": "/EdProject/static/media/digital-art-2.f744ed4979a809deab64.jpeg",
     "static/media/digital-art-1.jpeg": "/EdProject/static/media/digital-art-1.298b95dd68dc5a132f17.jpeg",
     "index.html": "/EdProject/index.html",
     "main.401a7fc4.css.map": "/EdProject/static/css/main.401a7fc4.css.map",
-    "main.030e89f9.js.map": "/EdProject/static/js/main.030e89f9.js.map"
+    "main.e5f0cf10.js.map": "/EdProject/static/js/main.e5f0cf10.js.map"
   },
   "entrypoints": [
     "static/css/main.401a7fc4.css",
-    "static/js/main.030e89f9.js"
+    "static/js/main.e5f0cf10.js"
   ]
 }
