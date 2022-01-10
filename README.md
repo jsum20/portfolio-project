@@ -1,17 +1,6 @@
-# How to use 
-
-## Setting up on your pc
-
-Use git clone to clone this project into your local machine and then do 'npm install' to install all the required dependencies for this project. However note that, VScode must be installed and and also Node for running JS code.
-https://phoenixnap.com/kb/install-node-js-npm-on-windows 
-
-When the contents are loaded into VScode, using 'npm start' will start the localhost:3000 server which allows you to change the content as you wish.
-
-After you are happy with the changes, to deploy/host the new website with all the changes you have made, use 'npm run build'
-
 ## Project structure
 
-In data: It contains all the information displayed within each page. If you wish to change any details this can be done here. It doesn't use standard markdown rules however you can use '\n' for a line break. I dont think bullet points work so opt for '1. 2. 3.' if you wish, or you could go into the Pages section and add an 'li' element. 
+In data: It contains all the information displayed within each page. If you wish to change any details this can be done here. 
 
 To change the favicon, make sure the name is 'favicon.ico' and drag and drop from your files into the public folder. 
 
