@@ -7,11 +7,11 @@ import ReactTypical from '../Components/ReactTypical';
 const HomePage = () => {
 
     return (
-        <>
+        <MainWrapper>
         
 
         <MainHeader>
-            <h1>Edmund Ho</h1>
+            <h1>Jason Sum</h1>
             <ParticleBackground />
         </MainHeader>
 
@@ -20,29 +20,28 @@ const HomePage = () => {
         </Typical>
 
         <div className="portfolio-links">
-            <Blog>
-                <NavLink to="/blog" activeClassName="active-class" exact>Blog</NavLink>
-            </Blog>
-
-            <About>
-                <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
-            </About>
-
             <BottomContainer>
                 <Education>
-                    <NavLink to="/education" activeClassName="active-class" exact>Education</NavLink>
+                    <NavLink to="/projects" activeClassName="active-class" exact>Personal Projects</NavLink>
                 </Education>
 
                 <Work>
-                    <NavLink to="/work" activeClassName="active-class" exact>Work</NavLink>
+                    <NavLink to="/work" activeClassName="active-class" exact>Work Experience</NavLink>
                 </Work>
             </BottomContainer>
         </div>
 
-        </>
+        </MainWrapper>
 
     )
 }
+
+const MainWrapper = styled.div`
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+`;
 
 const MainHeader = styled.div`
     display:flex;
@@ -50,7 +49,7 @@ const MainHeader = styled.div`
     margin-top:10%;
     h1{
         color:var(--primary-color);
-        font-size:8rem;
+        font-size:7rem;
 
         @media only screen and (max-width: 1200px) {
             font-size:6rem;
@@ -89,14 +88,16 @@ const Typical = styled.div`
 `;
 
 const BottomContainer = styled.div`
-    position:absolute;
-    bottom:2rem;
-    left:0;
-    right:0;
-    width:100%;
-
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 2rem; /* Position from the bottom */
+    left: 0; /* Start from the left edge */
+    right: 0; /* End at the right edge */
+    margin: auto; /* Center the element horizontally */
     display:flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 `;
 
 const Education = styled.div`
@@ -129,49 +130,6 @@ const Work = styled.div`
         }
     }
 
-    &:hover{
-        transform: scale(1.1);
-    }
-`;
-
-const About = styled.div`
-    position:absolute;
-    top:50%;
-    transform: rotate(-90deg);
-    left:2rem;
-    z-index:1;
-    transition: transform 0.5s;
-
-    a{
-        text-decoration:none;
-        color:var(--secondary-color);
-        font-size:1.3rem;
-        @media only screen and (max-width: 768px) {
-            font-size:1rem;
-        }
-    }
-
-    &:hover{
-        transform: scale(1.1);
-    }
-`;
-
-const Blog = styled.div`
-    position:absolute;
-    top:50%;
-    right: 2rem;
-    transform: rotate(90deg);
-    z-index:1;
-    transition: transform 0.5s;
-
-    a{
-        text-decoration:none;
-        color:var(--secondary-color);
-        font-size:1.3rem;
-        @media only screen and (max-width: 768px) {
-            font-size:1rem;
-        }
-    }
     &:hover{
         transform: scale(1.1);
     }

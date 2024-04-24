@@ -41,6 +41,9 @@ const Navigation = () => {
 }
 
 const NavigationStyled = styled.div`
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
     display:flex;
     justify-content:space-around;
     padding:1rem 0rem 1rem 0rem;

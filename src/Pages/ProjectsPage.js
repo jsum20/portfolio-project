@@ -5,7 +5,7 @@ import {EducationData} from "../data/EducationData";
 import styled from "styled-components";
 import Timeline from '../Components/EducationTimeline';
 
-const EducationPage = () => {
+const ProjectsPage = () => {
 
     const school = <SchoolIcon />
 
@@ -39,4 +39,4 @@ position: relative;
 const MainContent = styled.div`
 `;
 
-export default EducationPage;
+export default ProjectsPage;
