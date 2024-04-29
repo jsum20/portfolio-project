@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tabSpace {
+  display: inline-block;
+  width: 40px; /* Adjust the width as needed */
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  columns: 2;
+  max-width: 500px;
+}
+
+li {
+  padding-bottom: 0.5rem;
+  font-size:1rem;
+  font-weight:700;
+}
+
+a {
+  text-decoration: none;
+}

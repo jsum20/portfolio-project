@@ -1,49 +1,44 @@
 import React from 'react';
 import styled from "styled-components";
 
-const EducationTimeline = ({year, title, subtitle, text}) => {
+const EducationTimeline = ({title, image, subtitle, text, link}) => {
     return (
+        <a href={link} target="_blank">
         <TimelineStyled>
             <div className="left-content">
-                <p>{year}</p>
+                <p>{title}</p>
+                <img src={image} alt={title} style={{ width: '200px', height: 'auto' }} />
             </div>
             <div className="right-content">
-                <h4>{title}</h4>
                 <h5>{subtitle}</h5>
                 <p>{text}</p>
             </div>
         </TimelineStyled>
+        </a>
     )
 }
 
 const TimelineStyled = styled.div`
 display:flex;
-padding-bottom:4rem;
+justify-content: center;
+padding: 10px;
+margin-bottom:2rem;
+border: 1px solid #ccc;
+transition: box-shadow 0.3s ease;
+border-radius: 0.75rem;
+background-color: var(--project-tile-box); /* Replace with the exact color code for bg-slate-800 */
 
+&:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: var(--project-tile-box-hover); /* Replace with the exact color code for bg-slate-800 */
+ }
 
     .left-content{
         width:20%;
-        padding-left:20px;
         position:relative;
+        flex: 1;
+        margin-right: 10px;
 
-        &::before{
-            content:"";
-            position:absolute;
-            left:10%;
-            top:5px;
-            height:15px;
-            width:15px;
-            border:2px solid var(--bullet-color);
-            border-radius:50%;
-            background-color:var(--bullet-color);
-
-            @media only screen and (max-width: 500px) {
-
-            height:5px;
-            width:5px;
-            top:12px;
-            }
-        }
         p{
             display:flex;
             justify-content:center;
@@ -58,26 +53,18 @@ padding-bottom:4rem;
     }
 
     .right-content{
-        padding-left:10rem;
+        padding-left: 7rem;
         position:relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex:2
 
         @media only screen and (max-width: 500px) {
             padding-left:4rem;
 
         }
-        &::before{
-            content:"";
-            position:absolute;
-            left:0;
-            top:15px;
-            width:4rem;
-            height:2px;
-            background-color:var(--education-primary-color);
 
-            @media only screen and (max-width: 500px) {
-            width:2rem;
-
-        }
         }
         h5, h4{
             color:var(--education-primary-color);
@@ -93,7 +80,7 @@ padding-bottom:4rem;
         }
 
         h5 {
-            font-size:1.3rem;
+            font-size:1.4rem;
             padding-bottom:1rem;
             @media only screen and (max-width: 500px) {
             font-size:0.8rem;
@@ -101,8 +88,9 @@ padding-bottom:4rem;
         }
 
         p{
-            font-size:1.1rem;
+            font-size:1rem;
             color:var(--primary-color);
+            font-weight: 600;
             white-space:pre-wrap;
             
             @media only screen and (max-width: 500px) {

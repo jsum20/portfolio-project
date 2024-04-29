@@ -1,6 +1,6 @@
 import React from 'react';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import HomeIcon from '@material-ui/icons/Home';
 import styled from 'styled-components';
@@ -11,13 +11,13 @@ const Navigation = () => {
         <>
         <NavigationStyled>
             <div className="nav-icons">
-                <a target="_blank" href="https://www.instagram.com/yue_hixn/">
+                <a target="_blank" href="https://www.instagram.com/picsbyjase/">
                     <InstagramIcon className="instagram-icon"/>
                 </a>
-                <a target="_blank" href="https://www.facebook.com/edmund.ho.39">
-                    <FacebookIcon className="facebook-icon"/>
+                <a target="_blank" href="https://github.com/jsum20">
+                    <GitHubIcon className="github-icon"/>
                 </a>
-                <a target="_blank" href="">
+                <a target="_blank" href="https://www.linkedin.com/in/jason-sum/">
                     <LinkedInIcon className="linkedin-icon"/>
                 </a>
                 
@@ -30,7 +30,7 @@ const Navigation = () => {
             </div>
 
             <ContactMeStyled>
-                <button onClick={() => window.location = 'mailto:edmundho711@hotmail.com'}>Contact Me</button>
+                <button onClick={() => window.location = 'mailto:jasonsum321@gmail.com'}>Contact Me</button>
             </ContactMeStyled>
 
 
@@ -45,8 +45,8 @@ const NavigationStyled = styled.div`
     margin-left: auto;
     margin-right: auto;
     display:flex;
-    justify-content:space-around;
-    padding:1rem 0rem 1rem 0rem;
+    justify-content:space-between;
+    padding:1rem 1rem 1rem 1rem;
 
     .nav-icons{
         display:flex;
@@ -57,7 +57,7 @@ const NavigationStyled = styled.div`
             transition: transform 0.2s;
             color:var(--primary-color);
             &:hover{
-                transform: scale(0.9);
+                transform: scale(1.2);
             }
         }
 
@@ -113,14 +113,15 @@ const ContactMeStyled = styled.div`
         cursor: pointer;
         transition: transform 0.5s;
         font-size:1.3rem;
-        color:var(--primary-color);
+        font-weight:600;
+        color:var(--secondary-color);
         @media only screen and (max-width: 768px) {
             font-size:1rem;
         }
     }
 
     button:hover{
-        transform: scale(0.9);
+        transform: scale(1.2);
     }
     
 `;

@@ -4,6 +4,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import {EducationData} from "../data/EducationData";
 import styled from "styled-components";
 import Timeline from '../Components/EducationTimeline';
+import ParticleBackground from '../Particle/ParticleBackground';
 
 const ProjectsPage = () => {
 
@@ -11,14 +12,17 @@ const ProjectsPage = () => {
 
     return (
         <Box>
-            <BigTitle text="Education" icon={school}/>
+            <TitleWrapper>
+                <BigTitle text="Projects" icon={school}/>
+                <ParticleBackground />
+            </TitleWrapper>
 
             <MainContent>
                 {EducationData.map((element) => {
                     return (
                         <>
-                        <Timeline year={element.year} title={element.title} subtitle={element.subtitle} text={element.text}/>
-                        
+                        {/* rgb(15 23 42/var(--tw-bg-opacity)) */}
+                        <Timeline link = {element.link}image={element.image} subtitle={element.subtitle} text={element.text}/>
                         </>
                         )
                 })}
@@ -29,11 +33,14 @@ const ProjectsPage = () => {
     )
 }
 
+const TitleWrapper = styled.div`
+    display:flex;
+`;
+
 const Box = styled.div`
-background: var(--education-primary-box);
-width: 100vw;
-height:100vh;
-position: relative;
+max-width: 36rem;
+margin-left: auto;
+margin-right: auto;
 `;
 
 const MainContent = styled.div`

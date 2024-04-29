@@ -1,64 +1,159 @@
 import React from 'react';
 import WorkIcon from '@material-ui/icons/Work';
-import { WorkData } from '../data/WorkData';
-import { VerticalTimeline ,VerticalTimelineElement } from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
 import BigTitle from '../Components/BigTitle';
 import styled from "styled-components";
-import GavelIcon from '@material-ui/icons/Gavel';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { makeStyles } from '@material-ui/core/styles';
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import ParticleBackground from '../Particle/ParticleBackground';
 
+const useStyles = makeStyles((theme) => ({
+    accordion: {
+       maxWidth: '36rem',
+       margin: 'auto', // This centers the accordion if needed
+       marginBottom: theme.spacing(2),
+       display: 'flex', // Use flexbox to control layout
+       flexDirection: 'column', // Stack children vertically
+       paddingTop: theme.spacing(1),
+       paddingBottom: theme.spacing(1),
+       backgroundColor: 'var(--project-tile-box)',
+       color: 'var(--primary-color)'
+    },
+    accordionSummary: {
+        display: 'flex', // Use flexbox to control layout
+        alignItems: 'center', // Center children vertically
+        justifyContent: 'center', // Center children horizontally
+        color: 'var(--primary-color)',
+    },
+    accordionDetails: {
+        display: 'flex',
+        overflow: 'auto', // Add this line
+        minHeight: '200px', // Set a minimum height for the AccordionDetails
+        flexGrow: 1,
+        color: 'var(--primary-color)'
+    },
+    expandIcon: {
+        color: 'var(--primary-color)',
+     },
+   }));
+   
 const WorkPage = () => {
 
-    let lawIconStyle = {background: "#757de8"};
-    let otherIconStyle = {background: "#757de8"};
+    const classes = useStyles(); 
 
     const work = <WorkIcon />
 
-    const law = <GavelIcon />
+    const arrow = <ArrowForwardIosOutlinedIcon sx={{ fontSize: '0.7rem' }}/>
 
     const other = <AccountBalanceIcon />
 
     return (
         <Box>
-            <BigTitle text="Work Experience" icon={work} />
+            <TitleWrapper>
+                <BigTitle text="Work Experience" icon={work} />
+                <ParticleBackground />
+            </TitleWrapper>
 
-            <VerticalTimeline>
-                {WorkData.map((element) => {
+            <AccordionContainer>
+                <Accordion className={classes.accordion}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon className={classes.expandIcon} />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography>Software Engineer @ Ancoris</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails className={classes.accordionDetails}>
+                        <div>
+                        <Typography>
+                        March 2023 - Current<br /><br />At Ancoris, I have had the opportunity to hone my mobile development skills, specifically in Android.
+                        I am currently working on a global Android application for Rentokil Initial. The skills used primarily in this role include:<br /><br />
+                        
+                        </Typography>
+                            <div>
+                                <ul>
+                                    <li>
+                                    {arrow} Android
+                                    </li>
+                                    <li>
+                                    {arrow} Java
+                                    </li>
+                                    <li>
+                                    {arrow} GCP
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
 
-                    let isLawIcon = element.icon === "law";
+                <Accordion className={classes.accordion}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon className={classes.expandIcon} />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography>Software Engineering Consultant @ Bright Network</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails className={classes.accordionDetails}>
+                        <div>
+                            <Typography>
+                            Feb 2022 - March 2023<br /><br />During my time at Bright Network working as a software engineering consultant for Lloyds Banking Group, I had the chance
+                            work on web development, primarily on an internal colleague tool for helping customers with financial difficulty. I had the opportunity to mentor graduates and partake in several hackathons.
+                            The skills used primarily in this role include:<br /><br />
+                            </Typography>
 
-                    return(
-                        <VerticalTimelineElement 
-                        key={element.id} 
-                        date={element.date}
-                        dateClassName="date"
-                        iconStyle={isLawIcon ? lawIconStyle : otherIconStyle}
-                        icon={isLawIcon ? law : other}
-                        >
-                            <h3 className="vertical-timeline-element-title">{element.title}</h3>
-                            <h5 className="vertical-timeline-element-subtitle">{element.location}</h5>
-                            <p className="description">{element.description}</p>
-                        </VerticalTimelineElement>
-                    )
-                })}
-            </VerticalTimeline>
+                            <div>
+                                <ul>
+                                    <li>
+                                    {arrow} Javascript/React
+                                    </li>
+                                    <li>
+                                    {arrow} Java/Springboot
+                                    </li>
+                                    <li>
+                                    {arrow} PostGreSQL/Databases
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+            </AccordionContainer>
         </Box>
     )
 }
 
+const TitleWrapper = styled.div`
+    display:flex;
+`;
+
+const AccordionContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+`;
+   
+
 const Box = styled.div`
-background: var(--work-primary-box);
-width: 100vw;
-height:100vh;
-position: relative;
+// background: var(--work-primary-box);
+max-width: 36rem;
+margin-left: auto;
+margin-right: auto;
 
     .date{
         color:var(--work-primary-color);
     }
 
     .vertical-timeline-element-content {
-        box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25), 0 0.4em 1.25em 0 rgba(0,0,0,0.15) !important;
+        box-shadow: var(--work-box-shadow);
     }
 
     #description{
@@ -80,8 +175,5 @@ position: relative;
 
 
 `;
-
-
-
 
 export default WorkPage;

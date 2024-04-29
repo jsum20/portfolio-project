@@ -19,6 +19,13 @@ const HomePage = () => {
         <ReactTypical />
         </Typical>
 
+        <Info>
+            <p>
+                A software engineer based in London, UK. I'm currently working with Rentokil Initial on improving their Android applications. 
+                Before this, I contributed to building banking products for helping millions of customers within financial difficulty at Lloyds Banking Group.
+            </p>
+        </Info>
+
         <div className="portfolio-links">
             <BottomContainer>
                 <Education>
@@ -46,7 +53,7 @@ const MainWrapper = styled.div`
 const MainHeader = styled.div`
     display:flex;
     justify-content:center;
-    margin-top:10%;
+    margin-top:4%;
     h1{
         color:var(--primary-color);
         font-size:7rem;
@@ -74,6 +81,7 @@ const Typical = styled.div`
     font-size:2rem;
     color:var(--secondary-color);
     font-weight:600;
+    padding-bottom:3rem;
     @media only screen and (max-width: 1200px) {
             font-size:1.5rem;
         }
@@ -97,16 +105,17 @@ const BottomContainer = styled.div`
     right: 0; /* End at the right edge */
     margin: auto; /* Center the element horizontally */
     display:flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
+    padding:1rem 1rem 1rem 1rem;
 `;
 
 const Education = styled.div`
     transition: transform 0.5s;
-
     a{
         text-decoration:none;
         color:var(--secondary-color);
-        font-size:1.3rem;
+        font-size:1.5rem;
+        font-weight:600;
 
         @media only screen and (max-width: 768px) {
             font-size:1rem;
@@ -114,7 +123,7 @@ const Education = styled.div`
     }
 
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 
 `;
@@ -124,15 +133,27 @@ const Work = styled.div`
     a{
         text-decoration:none;
         color:var(--secondary-color);
-        font-size:1.3rem;
+        font-size:1.5rem;
+        font-weight:600;
+
         @media only screen and (max-width: 768px) {
             font-size:1rem;
         }
     }
 
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 `;
+
+const Info = styled.div`
+    padding-top:2rem;
+    p {
+        font-size: 1.4rem;
+        text-align:center;
+        color: var(--primary-color);
+        font-weight:700
+    }
+`
 
 export default HomePage;
