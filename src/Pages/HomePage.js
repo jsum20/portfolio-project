@@ -21,7 +21,7 @@ const HomePage = () => {
 
         <Info>
             <p>
-                A software engineer based in London, UK. I'm currently working with Rentokil Initial on improving their Android applications. 
+                A software engineer based currently in London, UK. I'm working with Rentokil Initial at the moment to improve their Android applications. 
                 Before this, I contributed to building banking products for helping millions of customers within financial difficulty at Lloyds Banking Group.
             </p>
         </Info>

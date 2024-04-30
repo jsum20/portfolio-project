@@ -56,7 +56,7 @@ const WorkPage = () => {
     return (
         <Box>
             <TitleWrapper>
-                <BigTitle text="Work Experience" icon={work} />
+                <BigTitle text="Experience" icon={work} />
                 <ParticleBackground />
             </TitleWrapper>
 
@@ -118,7 +118,7 @@ const WorkPage = () => {
                                     {arrow} Java/Springboot
                                     </li>
                                     <li>
-                                    {arrow} PostGreSQL/Databases
+                                    {arrow} PostgreSQL/Databases
                                     </li>
                                 </ul>
                             </div>
@@ -132,6 +132,7 @@ const WorkPage = () => {
 
 const TitleWrapper = styled.div`
     display:flex;
+    justify-content:center;
 `;
 
 const AccordionContainer = styled.div`

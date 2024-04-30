@@ -35,6 +35,7 @@ const ProjectsPage = () => {
 
 const TitleWrapper = styled.div`
     display:flex;
+    justify-content:center;
 `;
 
 const Box = styled.div`
