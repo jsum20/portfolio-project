@@ -5,7 +5,7 @@ export const BlogData = [
     {
         title: "Title of blog 1",
         description: "description of blog one - filler filler filler filler filler filler filler filler filler filler",
-        authorName: "Edmund Ho",
+        authorName: "Jason Sum",
         authorAvatar: avatar,
         coverImage: cover,
         date: "Published: date 1",
@@ -23,7 +23,7 @@ export const BlogData = [
     {
         title: "Title of blog 3",
         description: "description of blog three - filler filler filler filler filler filler filler filler filler filler",
-        authorName: "Edmund Ho",
+        authorName: "Jason Sum",
         authorAvatar: avatar,
         coverImage: cover,
         date: "Publish: date 3",
