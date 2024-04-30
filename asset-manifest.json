@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-project/static/css/main.b3f4bb51.css",
-    "main.js": "/portfolio-project/static/js/main.53b7cef4.js",
-    "static/media/Hack-for-change.jpeg": "/portfolio-project/static/media/Hack-for-change.6af5a4c67389a523d3fd.jpeg",
-    "static/media/digital-art-2.jpeg": "/portfolio-project/static/media/digital-art-2.f744ed4979a809deab64.jpeg",
-    "static/media/android.png": "/portfolio-project/static/media/android.0c5faeedf15a7b925728.png",
-    "static/media/digital-art-1.jpeg": "/portfolio-project/static/media/digital-art-1.298b95dd68dc5a132f17.jpeg",
-    "index.html": "/portfolio-project/index.html",
-    "main.b3f4bb51.css.map": "/portfolio-project/static/css/main.b3f4bb51.css.map",
-    "main.53b7cef4.js.map": "/portfolio-project/static/js/main.53b7cef4.js.map"
+    "main.css": "/static/css/main.b3f4bb51.css",
+    "main.js": "/static/js/main.cf0625e5.js",
+    "static/media/Hack-for-change.jpeg": "/static/media/Hack-for-change.6af5a4c67389a523d3fd.jpeg",
+    "static/media/digital-art-2.jpeg": "/static/media/digital-art-2.f744ed4979a809deab64.jpeg",
+    "static/media/android.png": "/static/media/android.0c5faeedf15a7b925728.png",
+    "static/media/digital-art-1.jpeg": "/static/media/digital-art-1.298b95dd68dc5a132f17.jpeg",
+    "index.html": "/index.html",
+    "main.b3f4bb51.css.map": "/static/css/main.b3f4bb51.css.map",
+    "main.cf0625e5.js.map": "/static/js/main.cf0625e5.js.map"
   },
   "entrypoints": [
     "static/css/main.b3f4bb51.css",
-    "static/js/main.53b7cef4.js"
+    "static/js/main.cf0625e5.js"
   ]
 }
