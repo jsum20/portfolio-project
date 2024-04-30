@@ -13,10 +13,10 @@ function App() {
     <Navigation />
     <ToggleSwitch/>
     <Routes>
-      <Route exact path="/portfolio-project/" element={<HomePage />}/>
-      <Route exact path="/portfolio-project/projects" element={<ProjectsPage />}/>
-      <Route exact path="/portfolio-project/work" element={<WorkPage />}/>
-      <Route exact path="/portfolio-project/blog/:id" element={<IndividualBlog/>} />
+      <Route exact path="/" element={<HomePage />}/>
+      <Route exact path="/projects" element={<ProjectsPage />}/>
+      <Route exact path="/work" element={<WorkPage />}/>
+      <Route exact path="/blog/:id" element={<IndividualBlog/>} />
     </Routes>
     </>
   );
