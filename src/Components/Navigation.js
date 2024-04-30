@@ -24,7 +24,7 @@ const Navigation = () => {
             </div>  
 
             <div className="home-icon-container">
-                <NavLink to="/">
+                <NavLink to="/portfolio-project">
                     <HomeIcon className="home-icon"/>
                 </NavLink>
             </div>
