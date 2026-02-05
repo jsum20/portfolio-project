@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio-project/static/css/main.b3f4bb51.css",
-    "main.js": "/portfolio-project/static/js/main.3ff8c1e2.js",
+    "main.js": "/portfolio-project/static/js/main.15387588.js",
     "static/media/Hack-for-change.jpeg": "/portfolio-project/static/media/Hack-for-change.6af5a4c67389a523d3fd.jpeg",
     "static/media/digital-art-2.jpeg": "/portfolio-project/static/media/digital-art-2.f744ed4979a809deab64.jpeg",
     "static/media/android.png": "/portfolio-project/static/media/android.0c5faeedf15a7b925728.png",
     "static/media/digital-art-1.jpeg": "/portfolio-project/static/media/digital-art-1.298b95dd68dc5a132f17.jpeg",
     "index.html": "/portfolio-project/index.html",
     "main.b3f4bb51.css.map": "/portfolio-project/static/css/main.b3f4bb51.css.map",
-    "main.3ff8c1e2.js.map": "/portfolio-project/static/js/main.3ff8c1e2.js.map"
+    "main.15387588.js.map": "/portfolio-project/static/js/main.15387588.js.map"
   },
   "entrypoints": [
     "static/css/main.b3f4bb51.css",
-    "static/js/main.3ff8c1e2.js"
+    "static/js/main.15387588.js"
   ]
 }
