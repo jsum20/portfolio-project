@@ -67,25 +67,61 @@ const WorkPage = () => {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Software Engineer @ Ancoris</Typography>
+                        <Typography>Full-Stack Java Software Engineer @ Capgemini Invent</Typography>
                     </AccordionSummary>
                     <AccordionDetails className={classes.accordionDetails}>
                         <div>
                         <Typography>
-                        March 2023 - Current<br /><br />At Ancoris, I have had the opportunity to hone my mobile development skills, specifically in Android.
-                        I am currently working on a global Android application for Rentokil Initial. The skills used primarily in this role include:<br /><br />
+                        June 2025 - Current<br /><br />At Capgemini Invent, I primary work on web applications with a focus on backend development, designing
+                        scalable backend systems that enable consistent user experiences across products.
+                        The skills used primarily in this role include:<br /><br />
+
+                        </Typography>
+                            <div>
+                                <ul>
+                                    <li>
+                                    {arrow} Java - Springboot
+                                    </li>
+                                    <li>
+                                    {arrow} Typescript - Nunjucks
+                                    </li>
+                                    <li>
+                                    {arrow} Apache Kafka
+                                    </li>
+                                    <li>
+                                    {arrow} AWS
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+
+                <Accordion className={classes.accordion}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon className={classes.expandIcon} />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography>Software Engineer @ Telana</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails className={classes.accordionDetails}>
+                        <div>
+                        <Typography>
+                        March 2023 - Nov 2024<br /><br />At Ancoris, I have had the opportunity to hone my mobile development skills, specifically in Android.
+                        I worked with multiple client on developing their global Android applications. The skills used primarily in this role include:<br /><br />
                         
                         </Typography>
                             <div>
                                 <ul>
                                     <li>
-                                    {arrow} Android
+                                    {arrow} Android - Jetpack Compose
                                     </li>
                                     <li>
                                     {arrow} Java
                                     </li>
                                     <li>
-                                    {arrow} GCP
+                                    {arrow} Google Cloud Platform
                                     </li>
                                 </ul>
                             </div>
@@ -104,18 +140,18 @@ const WorkPage = () => {
                     <AccordionDetails className={classes.accordionDetails}>
                         <div>
                             <Typography>
-                            Feb 2022 - March 2023<br /><br />During my time at Bright Network working as a software engineering consultant for Lloyds Banking Group, I had the chance
-                            work on web development, primarily on an internal colleague tool for helping customers with financial difficulty. I had the opportunity to mentor graduates and partake in several hackathons.
+                            Sept 2021 - March 2023<br /><br />During my time at Bright Network working as a software engineering consultant for Lloyds Banking Group, I had the chance
+                            work on web development, primarily on an internal colleague tool for supporting customers with financial difficulty. I had the opportunity to mentor graduates and partake in several hackathons.
                             The skills used primarily in this role include:<br /><br />
                             </Typography>
 
                             <div>
                                 <ul>
                                     <li>
-                                    {arrow} Javascript/React
+                                    {arrow} Javascript - React
                                     </li>
                                     <li>
-                                    {arrow} Java/Springboot
+                                    {arrow} Java - Springboot
                                     </li>
                                     <li>
                                     {arrow} PostgreSQL/Databases

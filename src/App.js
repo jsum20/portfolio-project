@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Navigation />
-    <ToggleSwitch/>
+        <ToggleSwitch/>
     <Routes>
       <Route exact path="/portfolio-project" element={<HomePage />}/>
       <Route exact path="/projects" element={<ProjectsPage />}/>

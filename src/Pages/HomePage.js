@@ -8,7 +8,6 @@ const HomePage = () => {
 
     return (
         <MainWrapper>
-        
 
         <MainHeader>
             <h1>Jason Sum</h1>
@@ -21,8 +20,8 @@ const HomePage = () => {
 
         <Info>
             <p>
-                A software engineer based currently in London, UK. I'm working with Ancoris at the moment with a focus on mobile Android applications. 
-                Before this, I contributed to building banking products for helping millions of customers within financial difficulty at Lloyds Banking Group.
+                Hi! I'm Jason, a software engineer based currently in Manchester, UK. I'm currently working at Capgemini Invent at the moment as a full-stack Java developer with a backend focus.
+                Before this, I contributed to building banking products for helping millions of customers at Lloyds Banking Group and Android mobile development at Telana.
             </p>
         </Info>
 

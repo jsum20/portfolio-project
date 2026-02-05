@@ -1,5 +1,5 @@
 import React from 'react';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import HomeIcon from '@material-ui/icons/Home';
@@ -11,8 +11,8 @@ const Navigation = () => {
         <>
         <NavigationStyled>
             <div className="nav-icons">
-                <a target="_blank" href="https://www.instagram.com/picsbyjase/">
-                    <InstagramIcon className="instagram-icon"/>
+                <a target="_blank">
+                    <ArrowForwardIcon/>
                 </a>
                 <a target="_blank" href="https://github.com/jsum20">
                     <GitHubIcon className="github-icon"/>
@@ -65,7 +65,7 @@ const NavigationStyled = styled.div`
 
     .home-icon-container{
         display:flex;
-        justify-content:center;
+        justify-content: center;
         margin-top:2rem;
 
         @media only screen and (max-width: 768px) {

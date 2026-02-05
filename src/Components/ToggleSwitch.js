@@ -44,7 +44,6 @@ const ToggleSwitch = () => {
 const LightDarkSwitchStyled = styled.div`
     height: 2.5rem;
     z-index: 15;
-    align-items: center;
     display: flex;
     justify-content: center;
 `;
